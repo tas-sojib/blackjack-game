@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #282c34;
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.wrapper {
+    background-color: #3b3f46;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 600px;
+}
+
+h1 {
+    color: #61dafb;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+}
+
+#message-el {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #f1c40f;
+}
+
+#cards-el, #sum-el {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #ffffff; /* Improved contrast */
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+button {
+    color: #282c34;
+    background: #61dafb;
+    padding: 15px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(97, 218, 251, 0.4);
+    width: 100%;
+    max-width: 150px;
+}
+
+button:hover {
+    background: #52b9d1;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(97, 218, 251, 0.6);
+}
+
+button:focus {
+    outline: none;
+}
+
+
+
+#player-el {
+    font-size: 1.2em;
+    margin-top: 20px;
+    color: #ffffff; /* Improved contrast */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    #message-el {
+        font-size: 1.2em;
+    }
+
+    #cards-el, #sum-el, #player-el {
+        font-size: 1em;
+    }
+
+    .wrapper {
+        padding: 5px;
+    }
+
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    button {
+        width: 25%;
+        max-width: none;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    #message-el {
+        font-size: 1em;
+    }
+
+    #cards-el, #sum-el, #player-el {
+        font-size: 0.9em;
+    }
+
+    .wrapper {
+        padding: 5px;
+    }
+
+    .button-container {
+        flex-direction: column;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 0.9em;
+        width: 70%;
+    }
+}
